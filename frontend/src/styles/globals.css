@@ -1,0 +1,31 @@
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #05070D;
+  color: #F5F7FF;
+}
+
+/* Glassmorphism panel */
+.glass {
+  @apply bg-surface bg-opacity-60 backdrop-blur-xs rounded-xl border border-primary/20;
+  box-shadow: 0 0 8px rgba(0, 229, 255, 0.3);
+}
+
+/* Neon border */
+.neon-border {
+  border: 1px solid rgba(0, 229, 255, 0.4);
+  box-shadow: 0 0 6px rgba(0, 229, 255, 0.5);
+}
+
+/* Animated gradient background for header */
+.gradient-bg {
+  background: linear-gradient(270deg, #00E5FF, #9D4EDD, #00E5FF);
+  background-size: 600% 600%;
+  animation: gradient-x 12s ease infinite;
+}
